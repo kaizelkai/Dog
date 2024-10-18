@@ -14,6 +14,9 @@ html, body{
     z-index: 1;
 }
 @media (min-width: 845px) {
+    .buy1{
+        width: 50%;
+    }
     .contenu {
         display: flex;
         z-index: 0;
@@ -270,6 +273,9 @@ html, body{
     }
 }
 @media (max-width: 845px) {
+    .buy1{
+        width: 50%;
+    }
     .contenu {
         display: flex;
         justify-content: center;
