@@ -10,12 +10,14 @@ html, body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        min-height: 100vh;
-        background-image: url('https://babysimonscat.io/wp-content/uploads/2024/10/Group-1597880521-scaled.jpg');
-        background-size: cover;       /* Assure que l'image couvre toute la section */
-        background-position: center;  /* Centre l'image de fond */
-        background-repeat: no-repeat; /* Empêche la répétition de l'image */
+        height: 100vh;
+        background-image: url("../media/img/bgg-comics.jpg"); /* Corriger le chemin si nécessaire */
+        background-size: cover;        /* Assure que l'image couvre toute la section */
+        background-position: center;   /* Centre l'image de fond */
+        background-repeat: no-repeat;  /* Empêche la répétition de l'image */
+        background-attachment: fixed;  /* Fixe l'image de fond pour un effet de parallaxe */
     }
+    
     /* Centrage de l'élément .premiere */
     .premiere {
         margin-top: 15%;
@@ -24,7 +26,7 @@ html, body{
         flex-direction: column;
         justify-content: center; /* Centrer verticalement */
         align-items: center;     /* Centrer horizontalement */
-        min-height: 100vh;       /* Assure que l'élément prend toute la hauteur de l'écran */
+        height: 100vh;       /* Assure que l'élément prend toute la hauteur de l'écran */
         text-align: center;      /* Centrer le texte */
     }
     
@@ -50,8 +52,8 @@ html, body{
     }
     
     .image img {
-        max-width: 100%;               /* S'assurer que les images ne débordent pas */
-        height: auto;
+        max-width: 60%;               /* S'assurer que les images ne débordent pas */
+        
     }
     
     
@@ -69,7 +71,7 @@ html, body{
         justify-content: center; /* Centrer horizontalement */
         align-items: center;     /* Centrer verticalement */
         gap: 15px;               /* Espacement entre les boutons */
-        margin-top: 20px;  
+        margin-top: -5%;  
         width: 80%;      /* Espacement supplémentaire au-dessus des boutons */
     }
     
@@ -78,9 +80,10 @@ html, body{
     }
     
     .centp .cp{
-        margin-top: -25px;
-        width: 70%;
-        min-width: 100px;
+        margin-top: -25%;
+        margin-bottom: 8%;
+        width: 50%;
+        
     }
     .image1 img{
     
@@ -124,11 +127,12 @@ html, body{
         
     }
     .text{
+        margin-top: -2%;
         width: 60%;
     }
     .nuagePatte{
-        margin-top: 45px;
-        margin-bottom: -85px;
+        width: 100%;
+    
     }
     .nuagePatte img{
         width: 100%;
@@ -262,7 +266,7 @@ html, body{
         align-items: center;
         flex-direction: column;
         min-height: 100vh;
-        background-image: url('https://babysimonscat.io/wp-content/uploads/2024/10/Group-1597880521-scaled.jpg');
+        background-image: url("../media/img/bgg-comics.jpg");
         background-size: cover;       /* Assure que l'image couvre toute la section */
         background-position: center;  /* Centre l'image de fond */
         background-repeat: no-repeat; /* Empêche la répétition de l'image */
