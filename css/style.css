@@ -4,9 +4,19 @@ html, body{
     margin: 0;
     background-color: #887f78;
 }
+.mainbg{
+    
+    background-image: url("../media/img/os.gif"); /* Corriger le chemin si nécessaire */
+    background-size: cover;        /* Assure que l'image couvre toute la section */
+    background-position: center;   /* Centre l'image de fond */
+    background-repeat: no-repeat;  /* Empêche la répétition de l'image */
+    background-attachment: fixed; 
+    z-index: 1;
+}
 @media (min-width: 845px) {
     .contenu {
         display: flex;
+        z-index: 0;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -70,8 +80,7 @@ html, body{
         display: flex;
         justify-content: center; /* Centrer horizontalement */
         align-items: center;     /* Centrer verticalement */
-        gap: 15px;               /* Espacement entre les boutons */
-        margin-top: -5%;  
+        gap: 15px;               /* Espacement entre les boutons */ 
         width: 80%;      /* Espacement supplémentaire au-dessus des boutons */
     }
     
@@ -131,6 +140,7 @@ html, body{
         width: 60%;
     }
     .nuagePatte{
+        
         width: 100%;
     
     }
@@ -265,21 +275,23 @@ html, body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        min-height: 100vh;
-        background-image: url("../media/img/bgg-comics.jpg");
-        background-size: cover;       /* Assure que l'image couvre toute la section */
-        background-position: center;  /* Centre l'image de fond */
-        background-repeat: no-repeat; /* Empêche la répétition de l'image */
+        height: 90vh;
+        background-image: url("../media/img/bgg-comics.jpg"); /* Corriger le chemin si nécessaire */
+        background-size: cover;        /* Assure que l'image couvre toute la section */
+        background-position: center;   /* Centre l'image de fond */
+        background-repeat: no-repeat;  /* Empêche la répétition de l'image */
+        background-attachment: fixed;  /* Fixe l'image de fond pour un effet de parallaxe */
     }
+    
     /* Centrage de l'élément .premiere */
     .premiere {
-        margin-top: -15px;
+        margin-top: -50%;
         display: flex;
         max-width: 100vw;
         flex-direction: column;
         justify-content: center; /* Centrer verticalement */
         align-items: center;     /* Centrer horizontalement */
-        min-height: 100vh;       /* Assure que l'élément prend toute la hauteur de l'écran */
+        height: 100vh;       /* Assure que l'élément prend toute la hauteur de l'écran */
         text-align: center;      /* Centrer le texte */
     }
     
@@ -306,7 +318,7 @@ html, body{
     
     .image img {
         max-width: 100%;               /* S'assurer que les images ne débordent pas */
-        height: auto;
+        
     }
     
     
@@ -325,7 +337,7 @@ html, body{
         justify-content: center; /* Centrer horizontalement */
         align-items: center;     /* Centrer verticalement */
         gap: 15px;               /* Espacement entre les boutons */
-        margin-top: 20px;  
+         
         width: 80%;      /* Espacement supplémentaire au-dessus des boutons */
     }
     
@@ -334,7 +346,7 @@ html, body{
     }
     
     .centp .cp{
-        margin-top: -25px;
+        
         width: 70%;
         min-width: 100px;
     }
@@ -449,7 +461,7 @@ html, body{
         flex-direction: column;  /* Dispose les éléments en colonne */
         align-items: center;      /* Centre horizontalement */
       
-        max-width: 80%;      /* Centre le texte */
+        max-width: 95%;      /* Centre le texte */
         margin: 45px;
         padding: 20px; 
         background-color: rgb(44, 38, 38);
@@ -460,6 +472,7 @@ html, body{
     }
     /* Si vous voulez que l'ombre soit plus accentuée vers le bas, vous pouvez ajuster le décalage et la taille */
     .address{
+        
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;  /* Dispose les éléments en colonne */
@@ -468,15 +481,17 @@ html, body{
     }
     .address img{
         margin-left: 8px;
-        width: 13%;
+        width: 23%;
         height: 5%;
     }
     .address p{
         background-color: #4d4c4c;
+        width: 90%;
         padding: 15px;
         border-radius: 50px;
-        font-size: 60%;
+        font-size: 50%;
     }
+    
     .total{
         display: flex;
         flex-wrap: wrap;
