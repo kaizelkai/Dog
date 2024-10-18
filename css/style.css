@@ -4,22 +4,35 @@ html, body{
     margin: 0;
     background-color: #887f78;
 }
-.mainbg{
-    
-    background-image: url("../media/img/os.gif"); /* Corriger le chemin si nécessaire */
-    background-size: cover;        /* Assure que l'image couvre toute la section */
-    background-position: center;   /* Centre l'image de fond */
-    background-repeat: no-repeat;  /* Empêche la répétition de l'image */
-    background-attachment: fixed; 
-    z-index: 1;
+.mainbg {
+    position: absolute;          /* Positionnement absolu pour placer l'image de fond au-dessus */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;               /* Utilise la hauteur de son conteneur parent `.main` */
+    background-image: url("../media/img/os.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0; 
+    pointer-events: none;                  /* Place l'image de fond derrière `.contenu` */
 }
+
+main {
+    position: relative;          /* Assure que `.mainbg` est positionné par rapport à `main` */
+    min-height: 100vh;           /* `main` occupe au moins la hauteur de la fenêtre */
+}
+
 @media (min-width: 845px) {
     .buy1{
         width: 50%;
     }
     .contenu {
+        position: relative;          /* Positionne `.contenu` au-dessus de `.mainbg` */
+        z-index: 100;  
         display: flex;
-        z-index: 0;
+        
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -135,7 +148,7 @@ html, body{
     .text p{
         font-weight: bold;
         font-size: 27px;
-        color: white;
+        color: rgb(0, 0, 0);
         
     }
     .text{
@@ -277,6 +290,8 @@ html, body{
         width: 50%;
     }
     .contenu {
+        position: relative;          /* Positionne `.contenu` au-dessus de `.mainbg` */
+        z-index: 100;  
         display: flex;
         justify-content: center;
         align-items: center;
@@ -384,7 +399,7 @@ html, body{
     .text p{
         font-weight: bold;
         font-size: 16px;
-        color: white;
+        color: rgb(0, 0, 0);
         
     }
     .text{
