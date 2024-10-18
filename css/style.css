@@ -28,6 +28,9 @@ main {
     .buy1{
         width: 50%;
     }
+    .buy1:hover{
+        transform: scale(1.3);
+    }
     .contenu {
         position: relative;          /* Positionne `.contenu` au-dessus de `.mainbg` */
         z-index: 100;  
@@ -288,6 +291,9 @@ main {
 @media (max-width: 845px) {
     .buy1{
         width: 50%;
+    }
+    .buy1:hover{
+        transform: scale(1.3);
     }
     .contenu {
         position: relative;          /* Positionne `.contenu` au-dessus de `.mainbg` */
